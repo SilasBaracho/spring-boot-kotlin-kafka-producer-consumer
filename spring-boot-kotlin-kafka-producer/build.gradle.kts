@@ -1,5 +1,9 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
+buildscript {
+	extra["openAPIVersion"] = "2.0.0"
+}
+
 plugins {
 	id("org.springframework.boot") version "3.1.1"
 	id("io.spring.dependency-management") version "1.1.0"
@@ -23,6 +27,7 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.springframework.kafka:spring-kafka")
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:${property("openAPIVersion")}")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.kafka:spring-kafka-test")
