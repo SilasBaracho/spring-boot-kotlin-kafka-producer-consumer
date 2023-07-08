@@ -6,7 +6,7 @@
 * Kotlin
 * Docker
 * Kafka
-* Zookeper
+* Zookeeper
 
 ## 💻 Download project
 ```
