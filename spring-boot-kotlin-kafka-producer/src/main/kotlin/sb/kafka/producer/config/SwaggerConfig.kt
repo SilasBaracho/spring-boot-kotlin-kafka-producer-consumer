@@ -18,7 +18,7 @@ class SwaggerConfig {
             .info(
                 Info()
                     .title("Producer API")
-                    .description("Microservice responsável produzir menssagens para o tópico: $topic")
+                    .description("Microservice responsible for producing messages for the topic: $topic")
             )
     }
 }
